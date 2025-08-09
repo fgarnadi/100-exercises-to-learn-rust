@@ -28,7 +28,8 @@ impl TicketStore {
             description: ticket.description,
             status: Status::ToDo,
         };
-        self.tickets.insert(id, Arc::new(Mutex::new(ticket.clone())));
+        self.tickets
+            .insert(id, Arc::new(Mutex::new(ticket.clone())));
         id
     }
 

@@ -9,8 +9,8 @@ fn easy_ticket(title: String, description: String, status: Status) -> Ticket {
         panic!("Title cannot be longer than 50 bytes");
     }
 
-    let description = if description.is_empty() || description.len() > 500  {
-       "Description not provided".to_string() 
+    let description = if description.is_empty() || description.len() > 500 {
+        "Description not provided".to_string()
     } else {
         description
     };
